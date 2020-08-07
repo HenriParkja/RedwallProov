@@ -228,7 +228,7 @@ window.addEventListener('scroll', () => {
     // animate detailinfo
     
     let detailinfoRect = detailInfo.getBoundingClientRect();  
-    if((Math.abs(detailinfoRect.top - 16) <= 10) && (!detailInfoWrapper.classList.contains("animate-detailinfo")) 
+    if((Math.abs(detailinfoRect.top) <= 10) && (!detailInfoWrapper.classList.contains("animate-detailinfo")) 
     && (!isMobile())) {
         
         detailInfoWrapper.classList.add("animate-detailinfo");
@@ -255,8 +255,8 @@ window.addEventListener('scroll', () => {
 
 /* Animate elements that will appear without scrolling */ 
 // animate detailinfo
-let detailinfoRect = detailInfo.getBoundingClientRect();  
-if((Math.abs(detailinfoRect.top - 16) <= 10) && (!detailInfoWrapper.classList.contains("animate-detailinfo"))
+let detailinfoRect = detailInfo.getBoundingClientRect(); 
+if((Math.abs(detailinfoRect.top) <= 10) && (!detailInfoWrapper.classList.contains("animate-detailinfo"))
 && (!isMobile())) {
     detailInfoWrapper.classList.add("animate-detailinfo");
     document.getElementById("detailinfo-transparent").classList.add("animate-transparent-layer");
