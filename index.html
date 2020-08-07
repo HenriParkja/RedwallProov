@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="et">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/mobile-styles.css">
+
+  <!-- JS -->
+  
+
+  <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon.ico' />
+
+  <title>Ringi Äripark</title>
+</head>
+
+<body>
+
+<div id="main" class="page">    
+
+    <div class="sticky-top"></div>
+    <div class="sticky-bottom"></div>
+
+    <!-- Intro -->
+    <section class="scroll">
+        <div id="intro" class="container-fluid scrollify" data-section-name="first">
+            <div id="logo" class="logo">
+                <img src="icons and logos/logo-white.svg" alt="Ringi Äripark logo">
+            </div>
+            <div class="languages">
+                <a class="body-xs" href="#"><strong>EST</strong></a>
+                <a class="body-xs" href="#">ENG</a>
+            </div>
+            <div id="scrolldown" class="scrolldown" style="display: none;">
+                <img onclick="window.scrollTo(0, window.innerHeight-16);" src="icons and logos/ScrolldownBtn.svg" alt="Järgmine sektsioon" aria-hidden="true">
+            </div>
+            <div class="container-fluid upper-gradient"></div>
+            <div id="lower-grad" class="container-fluid lower-gradient"></div>
+
+            <div id="heading-desktop" style="display: none;" class="heading">
+                <h1>Üürida uued A-klassi nähtavusega <i>build-to-suite</i> kaubandus- ja teeninduspinnad Jüri ringil</h1>
+            </div>
+            <div id="heading-mobile" style="display: none;" class="heading">
+                <h1>Üürida uued</h1>
+                <h1>A-klassi nähtavusega <i>build-to-suite</i> kaubandus- ja teenindus-</h1>
+                <h1>pinnad Jüri ringil</h1>
+            </div>
+            <div class="container-fluid btn-container">
+                <button id="desktop-cta" onclick="handleCTA()" type="button" class="btn btn-primary m-primary">Eelmüük alanud - võta ühendust!</button>
+            </div>
+
+            <div id="sticky-cta" class="container sticky-cta" style="display:none">
+                <button onclick="handleCTA()" type="button" class="btn btn-primary m-primary">Eelmüük alanud – võta ühendust!</button>
+            </div>
+
+            <div id="cookie-notice" class="cookie-notice">
+                <div class="cookie-notice-text">
+                    <p class="body-xs">See veebileht kasutab küpsiseid.</p>
+                    <p class="body-xs">Tutvu meie <span><a href="">privaatsuspoliitikaga.</a></span></p>
+                </div>
+                
+                <button type="button" onclick="hideCookieNotice()" class="btn btn-seconday s-secondary">Selge</button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Detailinfo -->
+    <section class="scroll">
+        <div id="detailinfo" class="container-fluid scrollify">
+            <img id="detailinfo-img" src="3D/ringi-aripark3.jpg" style="display:none" alt="Ringi Äripark 3D visualisatsioon">
+            <div id="detailinfo-transparent" class="transparent-layer bg-white"></div>
+            <div id="detailinfo-wrapper" class="container detailinfo-wrapper">
+                <div class="rectangle9"></div>
+                <h2 class="detailinfo-heading">Detailinfo</h2>
+                <div class="rectangle10"></div>
+                <div class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name">Tüüp</p>
+                    <p class="body-m-basic">100% ärimaa</p>
+                </div>
+                <div class="rectangle13"></div>
+                <row class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name">Brutopind</p>
+                    <p class="body-m-basic">29 000 m<sup>2</sup></p>
+                </row>
+                <div class="rectangle13"></div>
+                <row class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name">Hooneid</p>
+                    <p class="body-m-basic">Kuni 5</p>
+                </row>
+                <div class="rectangle13"></div>
+                <row class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name">Korruseid</p>
+                    <p class="body-m-basic">Kuni 5</p>
+                </row>
+                <div class="rectangle13"></div>
+                <row class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name desktop">Hoonestuskõrgus</p>
+                    <p class="body-m-basic detailinfo-name mobile">Hoonestus-kõrgus</p>
+                    <p class="body-m-basic">Kuni 20 m</p>
+                </row>
+                <div class="rectangle13"></div>
+                <row class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name desktop">Kasutusotstarve</p>
+                    <p class="body-m-basic detailinfo-name mobile">Kasutus-otstarve</p>
+                    <p class="body-m-basic">Kaubandus, teenindus, showroom, büroo, ladu, väiketootmine</p>
+                </row>
+                <div class="rectangle13"></div>
+                <row class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name">Parkimine</p>
+                    <p class="body-m-basic">Krundil, tasuta</p>
+                </row>
+                <div class="rectangle13"></div>
+                <row class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name">Energiamärgis</p>
+                    <p class="body-m-basic">A</p>
+                </row>
+                <div class="rectangle13"></div>
+                <row class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name">Tehnovõrgud</p>
+                    <p class="body-m-basic">Vesi ja kanalisatsioon, gaas, elekter, side</p>
+                </row>
+                <div class="rectangle13"></div>
+                <row class="row detailinfo-row">
+                    <p class="body-m-basic detailinfo-name">Valmimine</p>
+                    <p class="body-m-basic">Kuni 24 kuud</p>
+                </row>
+                <div class="rectangle10"></div>
+                <button type="button" class="btn btn-primary m-primary"><svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M19.35 6.04C18.67 2.59 15.64 0 12 0C9.11 0 6.6 1.64 5.35 4.04C2.34 4.36 0 6.91 0 10C0 13.31 2.69 16 6 16H19C21.76 16 24 13.76 24 11C24 8.36 21.95 6.22 19.35 6.04ZM17 9L12 14L7 9H10V5H14V9H17Z" fill="white"/>
+                    </svg><span onclick="window.location.href='test.pdf'" class="btn-span" target="_blank">PDF-esitlus</span></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontakt -->
+    <section class="scroll">
+        <div id="kontakt" class="scroll-end container-fluid scrollify">
+            
+            <div id="kontakt-wrapper" class="container kontakt-wrapper">
+                <div class="rectangle9 bg-white"></div>
+                <h2 class="white" >Võta ühendust!</h2>
+                <div class="row kontakt-text">
+                    <p class="body-m-basic white">Martin Ellervee</p>
+                    <p class="body-m-basic white">Stadium Real Estate OÜ</p>
+                </div>
+                <div class="row kontakt-email">
+                    <a href="mailto:martin@baltreal.ee" class="body-m-basic white underline">martin<span style="bottom: 2px; position:relative;"><small>@</small></span>baltreal.ee</a>
+                    <p class="body-m-basic white underline">+372 50 58 794</p>
+                </div>
+                <form method="post" id="contact-form">
+
+                    <input type="text" id="first-name" name="firstname" placeholder="Teie nimi*">
+                    <input type="tel" id="phone" name="phone" placeholder="Telefon*">
+                    <input type="email" id="email" name="email" placeholder="E-post*">
+                    <textarea id="message" name="message" placeholder="Küsimused, soovid, ettepanekud*"></textarea>
+                    <p class="body-xs">Kasutame isikuandmeid kliendi päringule vastamiseks. Me ei edasta isikuandmeid kolmandatele osapooltele ega lisa isikuandmeid reklaami eesmärgiga andmebaasidesse. <a href="#">Tutvu meie privaatsuspoliitikaga.</a></p>
+                    <div id="recaptcha" class="g-recaptcha" data-sitekey="6LfjTLkZAAAAABGS0VAmYJsb7lSmQNJJJyr55zqk" data-callback="recaptchaCallback"></div>
+                    <button id="send-button" type="submit" class="btn btn-primary m-primary auto-layout before-recaptcha">Saada!</button>
+                    <div id="form-notifications" class="form-notifications"></div>
+                </form>
+            </div>
+            <div id="bottom-logo" style="display: none" class="logo">
+                <img src="icons and logos/logo-white.svg" alt="Ringi Äripark logo">
+            </div>
+        </div>
+    </section>
+</div>
+
+    
+
+  <!-- Optional JavaScript -->
+  
+  <script src="js/smoothscroll.min.js"></script>
+  
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+
+    <script src="js/script.js"></script>
+    
+
+</body>
+
+</html>
