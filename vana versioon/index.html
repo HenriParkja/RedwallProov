@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-mobile.css">
+
+  <!-- JS -->
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+
+  <link rel='shortcut icon' type='image/x-icon' href='favicon/favicon.ico' />
+
+  <title>Ringi Äripark</title>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+  <div class="sticky-top"></div>
+  <div class="sticky-bottom"></div>
+  <div class="sticky-left"></div>
+  <div class="sticky-right"></div>
+  <button id="sticky-cta" onclick="callToAction()" type="button" class="btn btn-primary m-primary auto-layout" style="display:none;">Eelmüük alanud – võta ühendust!</button>
+  <div id="main" class="scroll-container">
+<!-- Intro -->
+    <section id="1">
+      <div id="intro">
+        <div class="container">
+          <img class="logo" src="icons and logos/logo-white.svg" alt="">
+          <img class="intro-img" src="3D/ringi-aripark1.jpg" alt="">
+          <img id="scroll-down" src="icons and logos/ScrolldownBtn.svg" class="scroll-down" alt="" onclick="scrollDown(document.getElementById('eelised'))">
+          <div id="cookie-alert" class="cookies-alert-container">
+            <div class="cookies-alert-text">
+              <p class="body-xs gray8">See veebileht kasutab küpsiseid.</p>
+              <p class="body-xs gray8">Tutvu meie <span><a class="gray8 body-xs-underline" href="">privaatsuspoliitikaga.</a></span></p>
+            </div>
+            <button onclick="hideCookieAlert()" type="button" class="btn btn-secondary s-secondary">Selge</button>
+          </div>
+          <button onclick="callToAction()" type="button" class="btn btn-primary m-primary auto-layout">Eelmüük alanud – võta ühendust!</button>
+          <div class="heading">
+            <h1 id="mobile-main-heading" class="white heading-text" style="display:none">Üürida uued A-klassi nähtavusega <i>build-to-suite</i> kaubandus- ja teenindus-pinnad Jüri ringil</h1>
+            <h1 id="desktop-main-heading" class="white heading-text" style="display:none">Üürida uued A-klassi nähtavusega <i>build-to-suite</i> kaubandus- ja teeninduspinnad Jüri ringil</h1>
+          </div>
+          <div class="upper-cover-gradient"></div>
+          <div id="lower-gradient" class="lower-cover-gradient"></div>
+          <div class="language-container">
+            <a href="" class="est body-xs-bold white">EST</a>
+            <a href="index_eng.html" class="eng body-xs white">ENG</a>  
+          </div>
+      
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Eelised -->
+    <section id="2">
+      <div id="eelised">
+        <div class="container2">
+          <div class="toote-eelised">
+            <div class="rectangle9"></div>
+            <h2 class=eelised-heading>Toote eelised</h2>
+            <div class="eelised-text">
+              <ul>
+                <li class="body-m-list">hooned projekteeritakse ja ehitatakse lähtuvalt kliendi soovidest</li>
+                <li class="body-m-list">energiasäästlikud A-energiaklassi hooned</li>
+                <li class="body-m-list">madalad püsikulud</li>
+                <li class="body-m-list">esinduslik klaasfassaadiga arhitektuur</li>
+                <li class="body-m-list">reklaampinnad Tartu mnt ja ringtee suunas</li>
+                <li class="body-m-list">võtmed kätte kuni 24 kuuga</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="asukoha-eelised">
+            <div class="rectangle9"></div>
+            <h2 class="eelised-heading">Asukoha eelised</h2>
+            <div class="eelised-text">
+              <ul>
+                <li class="body-m-list">A-klassi asukoht ja nähtavus</li>
+                <li class="body-m-list">väga hea ligipääsetavus</li>
+                <li class="body-m-list">kiire ühendus Eesti põhimaanteede ja Tallinnaga</li>
+                <li class="body-m-list">kõrge liiklustihedusega teede sõlmpunkt – ca 40 000 autot päevas</li>
+                <li class="body-m-list">kiiresti areneva äriparkide piirkonna keskus</li>
+                <li class="body-m-list">koostööpartnerite lähedus</li>
+                <li class="body-m-list">paiknemine hästi toimiva infrastruktuuriga Jüri alevikus</li>
+                <li class="body-m-list">tuntud ja lihtsalt leitav asukoht</li>
+              </ul>
+            </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Asukoht pildiga -->
+    <section id="3">
+      <div id="asukoht-pildiga">
+        <div class="container">
+          <div class="asukoht-pildiga-heading-container">
+            <div class="rectangle9"></div>
+            <h2 class="asukoht-pildiga-heading">Esirea positsioon ja nähtavus Tartu mnt ja Tallinna ringtee serval</h2>
+            </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Asukoht kaardil -->
+    <section id="4">
+      <div id="asukoht-kaardil">
+        <div class="asukoht-kaardil-modal" style="display: none;">
+        <img class="modal-img" src="maps/map-est-zoom.png" alt="">
+        </div>
+        <div class="container">
+          <div id="asukoht-kaardil-flex-wrapper" class="flex-wrapper">
+            <div id="asukoht-kaardil-img" class="asukoht-kaardil-img"></div>
+            <div class="asukoht-kaardil-background">
+            </div>
+            <div id="info-box-overlay" class="overlay">
+              <div id="info-box-wrapper" class="info-box-wrapper">
+                <div id="info-box1" class="info-box">
+                  <h4>Ringi tee 11</h4>
+                  <div class="rectangle10"></div>
+                  <p class="body-m-basic">Hooneid 2</p>
+                  <div class="rectangle13"></div>
+                  <p class="body-m-basic">Brutopind 14 000 m<sup>2</sup></p>
+                  <div class="rectangle13" style="height:0.5px"></div>
+                  <p class="body-m-basic">Krunt 14 520 m<sup>2</sup></p>
+                  <div class="rectangle11"></div>
+                </div>
+                <div id="info-box2" class="info-box">
+                  <h4>Ringi tee 13</h4>
+                  <div class="rectangle10"></div>
+                  <p class="body-m-basic">Hooneid 3</p>
+                  <div class="rectangle13"></div>
+                  <p class="body-m-basic">Brutopind 15 000 m<sup>2</sup></p>
+                  <div class="rectangle13" style="height:0.5px"></div>
+                  <p class="body-m-basic">Krunt 16 238 m<sup>2</sup></p>
+                  <div class="rectangle11"></div>
+                </div>
+              </div>
+            </div>
+            <div id="asukoht-overlay" class="overlay">
+              <div id="asukoht-kaardil-text-wrapper" class="asukoht-kaardil-text-wrapper">
+                <div class="rectangle9"></div>
+                <h2 class="asukoht-kaardil-heading">Lähiümbrus</h2>
+                <div class="text-container">
+                  <p class="body-m-list">Eesti üks olulisim liiklussõlm ja äripiirkond, mis lähiaastatel üha laieneb.</p>
+                  <p class="body-m-list">Piirkonnas tegutseb üle 2200 ettevõtte, sh Via 3L, DPD, Smarten Logistics, Rimi, Maxima, ABB, Bosch, Orkla, Pipelife, Würth, Inchcape Motors, United Motors jpt.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a id="google-maps-button" class="btn btn-primary m-primary auto-layout" target="_blank" role="button" href="https://www.google.com/maps/place/Ringi+tee+13,+J%C3%BCri,+75305+Harju+maakond/@59.3520503,24.6077846,10z/data=!4m5!3m4!1s0x4692ea2bfbf39341:0xc72deb154c289834!8m2!3d59.3520476!4d24.8879413">Asukoht Google Maps&#8217;is</a>
+              
+        </div>
+        
+      </div>
+    </section>
+
+
+    <!-- Detailinfo -->
+    <section id="5">
+      <div id="detailinfo">
+        <div class="container">
+          <div class="background-img"></div>
+          <div class="overlay">
+            <div id="detailinfo-wrapper" class="detailinfo-wrapper">
+              <div class="rectangle9"></div>
+              <h2>Detailinfo</h2>
+              <div class="rectangle10"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Tüüp</p>
+                <p class="body-m-basic">100% ärimaa</p>
+              </div>
+              <div class="rectangle13"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Brutopind</p>
+                <p class="body-m-basic">29 000 m<sup>2</sup></p>
+              </div>
+              <div class="rectangle13"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Hooneid</p>
+                <p class="body-m-basic">Kuni 5</p>
+              </div>
+              <div class="rectangle13" style="height: 0.5px;"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Korruseid</p>
+                <p class="body-m-basic">Kuni 5</p>
+              </div>
+              <div class="rectangle13"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Hoonestuskõrgus</p>
+                <p class="body-m-basic">Kuni 20 m</p>
+              </div>
+              <div class="rectangle13"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Kasutusotstarve</p>
+                <p class="body-m-basic">Kaubandus, teenindus, showroom, büroo, ladu, väiketootmine</p>
+              </div>
+              <div class="rectangle13" style="height: 0.5px;"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Parkimine</p>
+                <p class="body-m-basic">Krundil, tasuta</p>
+              </div>
+              <div class="rectangle13"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Energiamärgis</p>
+                <p class="body-m-basic">A</p>
+              </div>
+              <div class="rectangle13" style="height: 0.5px;"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Tehnovõrgud</p>
+                <p class="body-m-basic">Vesi ja kanalisatsioon, gaas, elekter, side</p>
+              </div>
+              <div class="rectangle13"></div>
+              <div class="detailinfo-row-wrapper">
+                <p class="body-m-basic detailinfo-name">Valmimine</p>
+                <p class="body-m-basic">Kuni 24 kuud</p>
+              </div>
+              <div class="rectangle10"></div>
+              <button type="button" class="btn btn-primary m-primary auto-layout"><svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.35 6.04C18.67 2.59 15.64 0 12 0C9.11 0 6.6 1.64 5.35 4.04C2.34 4.36 0 6.91 0 10C0 13.31 2.69 16 6 16H19C21.76 16 24 13.76 24 11C24 8.36 21.95 6.22 19.35 6.04ZM17 9L12 14L7 9H10V5H14V9H17Z" fill="white"/>
+                </svg><span class="btn-span">PDF-esitlus</span></button>
+            </div> 
+          </div>
+              
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Kontakt -->
+    <section id="6">
+      <div id="kontakt">
+        <div class="container">
+          <div class="background-img"></div>
+          <div id="contact-form-wrapper" class="contact-form-wrapper">
+            <div class="contact-opaque-layer">
+              <div class="rectangle9"></div>
+            <h2>Võta ühendust!</h2>
+            <div class="kontakt-text-wrapper">
+              <p class="body-m-basic">Martin Ellervee</p>
+              <p class="body-m-basic">Stadium Real Estate OÜ</p>
+              <div class="kontakt-email-wrapper">
+                <a href="mailto:martin@baltreal.ee" class="body-m-basic">martin<span style="bottom: 2px; position:relative;"><small>@</small></span>baltreal.ee</a>
+                <p class="body-m-basic">+372 50 58 794</p>
+              </div>
+            </div>
+
+            <form method="post" id="contact-form">
+
+              <input type="text" id="first-name" name="firstname" placeholder="Teie nimi*">
+              <input type="tel" id="phone" name="phone" placeholder="Telefon*">
+              <input type="email" id="email" name="email" placeholder="E-post*">
+              <textarea id="message" name="message" placeholder="Küsimused, soovid, ettepanekud*"></textarea>
+              <p class="body-xs">Kasutame isikuandmeid kliendi päringule vastamiseks. Me ei edasta isikuandmeid kolmandatele osapooltele ega lisa isikuandmeid reklaami eesmärgiga andmebaasidesse. <a href="#">Tutvu meie privaatsuspoliitikaga.</a></p>
+              <div class="g-recaptcha" data-sitekey="6LfjTLkZAAAAABGS0VAmYJsb7lSmQNJJJyr55zqk" data-callback="recaptchaCallback"></div>
+              <button id="send-button" type="submit" class="btn btn-primary m-primary auto-layout before-recaptcha">Saada!</button>
+              <div id="form-notifications" class="form-notifications"></div>
+            </form>
+            </div>
+          </div>
+          <img id="bottom-logo" class="logo" src="icons and logos/logo-white.svg" alt="" style="display:none">
+        </div>
+        
+      </div>
+    </section>
+  </div>
+</div>
+
+
+  
+  
+
+
+  <!-- Optional JavaScript -->
+  <script src="js/script.js"></script>
+  
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

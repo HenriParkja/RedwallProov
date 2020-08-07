@@ -1,0 +1,1072 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;  
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    
+}
+
+/* --------------------------------------------------------------------- */
+/* --- General styles--- */ 
+
+.body-m-list {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    color: #0C0C0C;
+}
+
+.body-m-basic {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0C0C0C;
+}
+
+.body-xs-bold {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.body-xs {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
+
+.body-xs-underline {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+    text-decoration: underline;
+}
+.white {
+    color: white;
+}
+
+.gray8 {
+    color: #332A26;
+}
+
+.m-primary, .m-primary:disabled {
+    background: #EE1D4C;
+    color: white;
+    border: none;
+    border-radius: 0;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    outline: none !important;
+    opacity: 1;
+    
+}
+
+.m-primary:hover {
+    background: #BE0E36;
+}
+
+.m-primary:active, .m-primary:focus, .btn-primary:focus, .btn-primary:active {
+    background: #BE0E36 !important;
+    outline: none !important;
+    border-style: none !important;
+    box-shadow: none !important;
+}
+
+
+.s-secondary {
+    background: white;
+    border-radius: 0;
+    border: 2px solid #0C0C0C;
+    color: #0C0C0C;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0;
+    outline: none;
+}
+
+.s-secondary:hover {
+    border: 3px solid #BE0E36;
+    background: white;
+    color: #0C0C0C;
+}
+
+.s-secondary:active, .s-secondary:focus, .btn-secondary:focus, .btn-secondary:focus {
+    background: white !important;
+    color: #0C0C0C !important;
+    outline: none !important;
+    border-style: none !important;
+    box-shadow: none !important;
+    border: 3px solid #BE0E36 !important;
+
+}
+
+.auto-layout {
+    display: flex;
+    flex-direction: row;
+    padding: 8px 24px;
+    flex-wrap: nowrap;
+}
+
+h1 {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    
+    text-align: center;
+    letter-spacing: -0.02em;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+    
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: -0.01em;
+    color: #0C0C0C;
+}
+
+h4 {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    color: #0C0C0C; 
+}
+
+a:hover {
+    color: white;
+}
+
+.rectangle9 {
+    width: 100%;
+    height: 4px;
+    background-color: #0C0C0C;
+    z-index: 30;
+}
+
+.rectangle10 {
+    height: 2px;
+    background: #0C0C0C;
+    width: 100%;
+}
+
+.rectangle13 {
+    height: 1px;
+    width: 100%;
+    background: #0C0C0C;
+}
+
+.rectangle11 {
+    height: 2px;
+    width: 100%;
+    background: #0C0C0C;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --- Top Menu AND fixed items --- */ 
+.logo {
+    top: 44px; 
+    left: 47px; 
+    position: absolute;
+    z-index: 10;
+    height: 79px;
+    width: auto; 
+}
+
+.language-container {
+    position: absolute;
+    display: flex;
+    right: 47px;
+    top: 35px;
+}
+
+.est {
+    margin-right: 13px;
+
+}
+
+.sticky-top {
+    height: 16px;
+    width: 100%;
+    background-color:white;
+    position: fixed;
+    top: 0;
+    z-index: 40;
+}
+
+.sticky-bottom {
+    height: 16px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    z-index: 40;
+}
+
+.sticky-right {
+    height: 100%;
+    width: 16px;
+    background-color: white;
+    position: fixed;
+    right: 0;
+    z-index: 40;
+    overflow: hidden;
+}
+
+.sticky-left {
+    height: 100%;
+    width: 16px;
+    background-color: white;
+    position: fixed;
+    left: 0;
+    z-index: 40;
+}
+
+.wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#sticky-cta {
+    position: fixed;
+    bottom: 16px;
+    left: 16px;
+    z-index: 50;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --- Intro --- */
+
+.upper-cover-gradient {
+    height: 200px; 
+    width: calc(100% - 32px);
+    left: 16px;
+    top: 16px;
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.lower-cover-gradient {
+    height: 454px; 
+    width: calc(100% - 16px);
+    left: 0;
+    top: calc(100vh - 470px);
+    position: absolute;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.67) 0%, rgba(0, 0, 0, 0) 100%);
+    transform: rotate(-180deg);
+    border-radius: 83.5px 0 0 0;
+}
+
+#intro {
+    position: relative;
+    height: calc(100vh - 1px);
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    display: flex;
+    width: 100%;    
+}
+
+.container {
+    padding: 0;
+    margin: 8px 16px 16px 16px;
+    max-width: 100%;
+    width: calc(100% - 32px);
+}
+
+.intro-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 83.5px 0;
+}
+
+#intro img {
+    object-fit: cover; 
+    margin: auto;
+}
+
+#intro .m-primary {
+    position: relative;
+    width: 304px;
+    height: 40px;
+
+    left: calc(50% - 152px);
+    top: -149px;
+    z-index: 30;
+}
+
+.scroll-down {
+  position: relative;
+  right: -6px;
+  float: right;
+  top: -26px;
+  z-index: 20;  
+  width: 32px;
+  height: 32px;
+  transition: 0.2s
+
+}
+
+.scroll-down:hover {
+    transform: translate3d(0, 4px , 0);
+    cursor: pointer;
+}
+
+.heading {
+    position: relative; 
+    width: 95%;
+    height: 100px;
+
+    top: -353px;
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 5%;
+    margin-right: 20px;
+    padding: 0;
+    z-index: 30;
+
+}
+
+.heading-text {
+    width: 913px;
+    max-width: 100%;
+    text-shadow: 0px 0px 20px #000000;
+}
+
+.cookies-alert-container {
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+    width: 291px;
+    height: 52px;
+    background: white;
+    /*box-shadow: 0px 34px 80px rgba(36, 30, 27, 0.2);*/
+    z-index: 30;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    opacity: 1;
+}
+
+.animate-cookies-alert {
+    animation: fade 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    99% {
+
+        visibility: visible;
+    }
+
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+.cookies-alert-text {
+    position: relative;
+    height: 100%;
+    padding: 8px 0;
+    margin: 0px 0px 0px 16px;
+}
+
+a:hover.gray8 {
+    color: #332A26;
+}
+
+#intro .s-secondary {
+    position: relative; 
+    width: 70px;
+    height: 28px;
+    margin: 0 15px;
+    
+}
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --- Eelised --- */
+
+#eelised {
+    height: calc(100vh - 32px); 
+    margin: 0px 16px 16px 16px;
+    max-height: 100vh;
+    background-color: #c7deef;
+    width: calc(100% - 32px);
+    padding-top: 16px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 8px 171px 0 171px;
+}
+
+.toote-eelised {
+    margin: 160px 24px 0 0;
+    width: 100%;
+}
+
+.asukoha-eelised {
+    margin: 160px 0 0 24px;
+    width: 100%;
+}
+
+.eelised-heading {
+    margin-top: 16px;
+    margin-bottom: 0;
+
+}
+.txt-left {
+    flex-direction: row;
+}
+
+#eelised ul {
+    margin-left: 0;
+    padding: 0 0 0 20px;
+    margin-top: 40px;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --- Asukoht pildiga --- */
+
+#asukoht-pildiga {
+    height: calc(100vh - 32px);
+}
+
+
+#asukoht-pildiga .container {
+    background: url(../3D/ringi-aripark2.jpg);
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.asukoht-pildiga-heading-container {
+    top: 120px;
+    position: relative;
+    width: 702px;
+    margin-left: 20%;
+}
+
+#asukoht-pildiga .rectangle9 {
+    background-color: white;
+    position: relative;
+    width: 100%;
+}
+
+.asukoht-pildiga-heading {
+    color: white;
+    margin-top: 16px;
+
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --- Asukoht kaardil --- */
+
+#asukoht-kaardil {
+    height: calc(100vh - 32px);
+}
+
+#asukoht-kaardil .container {
+    height: 100%;
+
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    height: 100%;
+}
+
+#asukoht-kaardil .flex-wrapper > * {
+    flex: 0 0 auto;
+}
+
+.asukoht-kaardil-img {
+    background: url(../maps/map-est.png);
+    background-size: cover;
+    background-position: center top; 
+    width: 75%;
+    z-index: -1;
+}
+.asukoht-kaardil-background {
+    background: #C7DEEF;
+    width: 25%;
+    z-index: -1;
+    position: relative;
+    display: block;
+}
+
+.asukoht-kaardil-text-wrapper {
+    opacity: 0;
+}
+
+#asukoht-kaardil-text-wrapper {
+    z-index: 30;
+    transition: 0.8s ease-in-out;
+    position: absolute; 
+    margin-top: 187px;
+    right: -140px;
+}
+
+.asukoht-kaardil-heading {
+    margin-left: 145px;
+    margin-top: 16px;
+}
+
+.asukoht-kaardil-text-wrapper .rectangle9 {
+    width: 273px;
+    margin-left: 145px;
+}
+
+.text-container {
+    width: 273px;
+    margin-left: 145px;
+    margin-top: 40px;
+}
+
+#asukoht-kaardil .body-m-list {
+    line-height: 150%;
+}
+
+#info-box-wrapper {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-top: 187px;
+    opacity: 1;
+    z-index: 40;
+    right: 182px;
+    transition: 0.8s ease-in-out;
+    position: absolute;
+}
+
+.info-box {
+    height: 164px;
+    width: 192px;
+    background: white;
+    margin-bottom: 8px;
+    padding: 16px;
+    transition: 1s ease-in-out;
+    z-index: 40;
+    position: relative;
+    opacity: 0;
+}
+
+#info-box2 {
+    right: -50px;
+    position: relative;
+    transition: all 0.8s ease-in-out;
+}
+
+#info-box1 { 
+    transition: all 0.8s ease-in-out;
+}
+
+.lower-info-box-animate {
+    transform: translate(calc(-19vw - 50px), 0);
+    opacity: 1;
+}
+
+.animate {
+    transform: translate(-19vw, 0);
+    opacity: 1;
+}
+
+.info-box h4 {
+    margin-bottom: 4px;
+}
+
+.info-box p {
+    margin: 4px 0;
+}
+
+#asukoht-kaardil .m-primary {
+    bottom: 64px;
+    position: relative;
+    height: 40px;
+    margin: auto;
+    width: 235px;
+}
+
+#asukoht-kaardil a {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    height: 100%;
+}
+
+#asukoht-kaardil .m-primary a:hover {
+    text-decoration: none;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --- Asukoht kaardil üldisem --- */
+
+#asukoht-kaardil-yldisem .container {
+    background: url(../maps/map-large.png);
+    background-size: cover;
+    background-position: center top;
+    height: 100%;
+}
+
+#asukoht-kaardil-yldisem {
+    height: calc(100vh - 32px);
+
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --- Detailinfo --- */
+
+#detailinfo .container {
+    display: flex; 
+    flex-direction: row; 
+    height: 100%;
+
+}
+
+.background-img {
+    background: url(../3D/ringi-aripark3.jpg);
+    background-size: cover;
+    background-position: center top; 
+    height: 100%;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+#detailinfo {
+    height: calc(100vh - 32px);
+}
+
+#detailinfo .overlay {
+    position: relative; 
+    min-width: 100%;
+    width: 100%;
+    right: 100%;
+
+}
+
+.detailinfo-wrapper {
+    width: 40%;
+
+    position: absolute;
+    height: 100%;
+    opacity: 0.85;
+    background: white;
+    padding: 82px 64px;
+    right: calc(-15vw - 4px);
+    flex: 0 0 auto;
+    opacity: 0;
+    transition: 0.8s ease-in-out;
+
+
+}
+
+.animate-detailinfo {
+    opacity: 0.85;
+    transform: translate(calc(-15vw - 3px), 0);
+}
+
+#detailinfo h2 {
+    margin-top: 16px;
+    margin-bottom: 40px;
+}
+
+.detailinfo-row-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#detailinfo .body-m-basic {
+    margin: 4px 14px 4px 0px;
+}
+
+.detailinfo-name {
+    flex: 0 0 128px;
+}
+
+#detailinfo .m-primary {
+    width: 169px;
+    margin-top: 16px;
+}
+
+.btn-span {
+    margin-left: 8px;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --- Kontakt --- */
+
+#kontakt .container {
+    display: flex; 
+    flex-direction: row;
+    height: 100%;
+    position: relative;
+    overflow-x: hidden; 
+}
+
+#kontakt .background-img {
+    background: url(../3D/ringi-aripark1.jpg);
+    background-size: cover;
+    background-position: center top; 
+    flex: 0 0 auto;
+}
+
+#kontakt {
+    height: 866px;
+    
+}
+
+.contact-form-wrapper {
+    width: 40%;
+    position: absolute;
+    height: 100%;
+    flex: 0 0 auto;
+    right: -15vw;
+    transition: 0.8s ease-in-out;
+    opacity: 0;
+}
+
+.animate-contact {
+    transform: translate(-15vw, 0);
+    opacity: 1;
+}
+
+.contact-opaque-layer {
+    background-color: rgba(12, 12, 12, 0.85);
+    height: 100%;
+    width: 100%;
+    padding: 82px 64px;
+}
+
+#kontakt .rectangle9 {
+    background: white;
+}
+
+#kontakt h2 {
+    color: white;
+    margin: 16px 0 0 0;
+}
+
+.kontakt-text-wrapper {
+    margin-top: 40px;
+}
+
+#kontakt p {
+    color: white;
+    margin-bottom: 0;
+}
+
+.underlined {
+    text-decoration: underline;
+}
+
+.kontakt-email-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.kontakt-email-wrapper .body-m-basic {
+    border-bottom: 0.5px solid white;
+    line-height: 14px;
+    margin: 6px 16px 0 0;
+}
+
+form {
+    margin-top: 40px;
+}
+
+input {
+    height: 48px; 
+    width: 100%;
+    margin-bottom: 12px;
+    background: transparent; 
+    border: 1px solid white;
+    padding-left: 8px;
+    color: white;
+}
+
+input[type="text"], input[type="tel"], input[type="email"], textarea {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+textarea {
+    height: 108px;
+    width: 100%;
+    margin-bottom: 12px;
+    background: transparent;
+    border: 1px solid white;
+    padding-left: 8px;
+    color: white;
+    padding-top: 11px;
+}
+
+input:focus {
+    color: white;
+}
+
+textarea:focus {
+    color: white;
+}
+
+::placeholder {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 8px;
+    color: white;
+}
+
+#kontakt .body-xs {
+    margin-bottom: 12px;
+}
+
+#kontakt .m-primary {
+    width: 100%;
+    position: relative; 
+    margin-bottom: 8px;
+    
+}
+
+.before-recaptcha {
+    cursor: default !important;
+}
+
+.before-recaptcha:hover {
+    background: #EE1D4C !important;
+}
+
+.recaptcha-verified {
+    cursor: pointer;
+}
+
+
+.g-recaptcha {
+    margin-bottom: 12px;
+}
+
+
+.cursive {
+    font-style: italic;
+}
+
+#kontakt .body-xs a {
+    color: white;
+    text-decoration: underline;
+}
+
+#kontakt .kontakt-email-wrapper a {
+    color: white;
+    
+}
+
+#kontakt .kontakt-email-wrapper a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+#kontakt .logo {
+    width: auto;
+    position: absolute;
+    margin-top: 0;
+    top: auto;
+    bottom: 48px;
+}
+
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --------------------------------------------------------------------- */
+/* --- Media Queries Responsive Design --- */
+
+@media only screen and (min-width: 968px) and (max-width: 1200px) {
+    #eelised .container2 {
+        margin: 8px 130px 0 130px;
+    }
+
+   
+
+}
+
+@media only screen and (min-height: 866px) {
+    #kontakt {
+        height: 100vh;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px) {
+    .animate {
+        transform: translate(-17vw, 0);
+    }
+    .lower-info-box-animate {
+        transform: translate(calc(-17vw - 50px), 0);
+    }
+}
+
+@media only screen and (min-width: 968px) and (max-width: 1200px) {
+    .animate {
+        transform: translate(-18vw, 0);
+    }
+
+    .lower-info-box-animate {
+        transform: translate(calc(-18vw - 50px), 0);
+    }
+}
+
+@media only screen and (min-width: 602px) and (max-width: 968px) {
+    #eelised .container2 {
+        margin: 8px 60px 0 60px;
+    }
+
+    .toote-eelised, .asukoha-eelised {
+        margin-top: 80px;
+    }
+
+    .animate {
+        transform: translate(-180px, 0); 
+    }
+
+    .lower-info-box-animate {
+        transform: translate(-228px, 0);
+    }
+
+    .asukoht-kaardil-img {
+        background-position: center right;
+    }
+
+}
+
+@media only screen and (min-width: 602px) and (max-width: 768px) {
+    #eelised {
+        width: calc(100% - 16px);
+        margin: 0 8px 16px 8px;
+        height: auto;
+        max-height: none;
+    }
+
+    .container2 {
+        margin: 0 32px;
+        flex-direction: column;
+    }
+
+    .toote-eelised {
+        margin: 80px 24px 0 24px;
+        width: calc(100% - 48px);
+    }
+
+    .asukoha-eelised {
+        margin: 50px 24px 83px 24px;
+        width: calc(100% - 48px);
+
+    }
+
+    #eelised .rectangle9 {
+        max-width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 601px) {
+    #eelised .container2 {
+        flex-direction: column; 
+        margin: 0 32px;
+    }
+}
+
+@media only screen and (min-width: 602px) {
+    #asukoht-pildiga, #asukoht-kaardil, #detailinfo {
+        margin-bottom: 16px;
+    }
+
+    #detailinfo-wrapper, #contact-form-wrapper {
+        min-width: 480px;
+    }
+}
+
+@media only screen and (min-width: 602px) and (max-width: 1024px) {
+    .asukoht-pildiga-heading-container {
+        width: 77%; 
+        margin: 0 8% 0 15%;
+    }
+}
+
+@media only screen and (min-width: 602px) and (max-width: 1200px) {
+    .asukoht-kaardil-background {
+        min-width: 280px;
+    }
+
+    #asukoht-kaardil .flex-wrapper > * {
+        flex: 1 1 auto;
+    }
+}

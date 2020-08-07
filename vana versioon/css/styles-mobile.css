@@ -1,0 +1,726 @@
+@media only screen and (max-width: 790px) {
+    .logo {
+        height: 10vw;
+    }
+}
+
+@media (hover: none) {
+    
+}
+
+
+
+@media (max-height: 481px) {
+    /* GENERAL */ 
+    h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .auto-layout {
+        padding: 8px 16px;
+    }
+
+
+    /* INTRO */
+
+    .logo {
+        
+        top: 24px;
+        left: 32px;
+    }
+
+    .container {
+        margin: 8px 8px 8px 8px;
+        width: calc(100% - 16px);
+    }
+
+    .sticky-top, .sticky-bottom {
+        height: 8px;
+        z-index: 1999;
+    }
+
+    .sticky-right, .sticky-left {
+        width: 8px;
+    }
+
+    .upper-cover-gradient {
+        top: 8px; 
+        left: 8px;
+        width: calc(100% - 16px);
+    }
+    
+    .language-container {
+        position: absolute;
+        display: flex;
+        right: 32px;
+        top: 31px;
+    }
+
+    .heading {
+        top: calc(-416px + 90vw - 320px);
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0 24px;
+    }
+
+    #intro .m-primary {
+        width: calc(100% - 16px);
+        max-width: 100%;
+        left: 8px;
+    
+        top: calc(100vh - 48px);
+        position: fixed !important;
+        position: -webkit-sticky;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        display: inline-flex;
+        z-index: 100;
+    }
+
+    .cookies-alert-container {
+        left: 0;
+        top: 0;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        opacity: 1;
+        z-index: 999;
+    }
+
+    #intro .s-secondary {
+       
+        margin-right: 16px;
+        
+    }
+
+    .cookies-alert-text {
+        
+        margin: 0px 0px 0px 16px;
+    }
+
+    .lower-cover-gradient {
+        height: 454px; 
+        width: 100%;
+        left: 8px;
+        top: calc(100vh - 462px);
+        width: calc(100% - 16px);
+        border-radius: 0;
+        position: absolute;
+    }
+
+    #intro img {
+        border-radius: 0;
+    }
+
+    #eelised {
+        width: calc(100% - 16px);
+        margin: 0 8px 0 8px;
+        height: auto;
+        max-height: none;
+    }
+
+    .container2 {
+        margin: 0 32px;
+        flex-direction: column;
+    }
+
+    .toote-eelised {
+        margin: 80px 24px 0 24px;
+        width: calc(100% - 48px);
+    }
+
+    .asukoha-eelised {
+        margin: 50px 24px 83px 24px;
+        width: calc(100% - 48px);
+
+    }
+
+    #eelised .rectangle9 {
+        max-width: 100%;
+    }
+
+    .asukoht-pildiga-heading-container {
+        top: 92px; 
+        margin: 0 32px 0 32px;
+        width: auto;
+
+    }
+
+    #asukoht-kaardil .flex-wrapper {
+        flex-direction: column; 
+        height: auto;
+        float: none;
+        justify-content: center;
+        align-items: center;
+        background: #C7DEEF;
+
+    }
+
+    #asukoht-kaardil {
+        height: auto;
+    }
+
+    .asukoht-kaardil-img {
+        z-index: 0; 
+        width: calc(100vw - 16px);
+        height: calc(64vw - 16px);
+        background: none;
+        display: block;
+        position: relative;
+        order: 1;
+    
+    }
+
+    #info-box-overlay {
+        order: 2;
+    }
+
+    #asukoht-overlay {
+        order: 4;
+    }
+
+    #google-maps-button {
+        order: 3;
+    }
+
+    .asukoht-kaardil-background {
+        display: none;
+    }
+
+    #asukoht-kaardil .flex-wrapper > * {
+        flex: 1 1 auto;
+    }
+
+    #asukoht-kaardil .overlay {
+        min-height: 324px; 
+        width: 100%; 
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: stretch;
+        background-color: #C7DEEF;
+    }
+
+    #info-box-wrapper {
+      
+        right: 0;
+        margin: 0 32px;
+        float: none;
+        position: relative;
+        width: 100%;
+    }
+
+    #info-box-wrapper > * {
+        width: 100%;
+    }
+    .info-box {
+        opacity: 1;
+    }
+
+    #info-box2 {
+        right: 0;
+    }
+
+    #asukoht-kaardil-text-wrapper {
+        opacity: 1;
+        margin: 50px 32px 50px 32px; 
+        right: 0;
+        width: 100%;
+        position: relative;
+        height: auto;
+
+
+    }
+
+    #asukoht-kaardil-text-wrapper > * {
+        margin-left: 0; 
+        width: 100%;
+    }
+
+    #asukoht-kaardil-text-wrapper .rectangle9 {
+        width: 100%; 
+    }
+
+    .asukoht-kaardil-img-mobile {
+        min-height: 100%;
+        min-width: 100%;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        object-fit: cover;
+        display: block; 
+        z-index: -1;
+        position: relative;
+    }
+
+    #asukoht-kaardil .m-primary {
+        margin: 0 32px 0 32px;
+        width: calc(100% - 64px);
+        bottom: 0;
+    }
+
+    #detailinfo {
+        height: auto; 
+        width: 100%; 
+    }
+
+    #detailinfo .background-img {
+        background-position: center left;
+        height: 256px;
+    }
+
+    #detailinfo .container {
+        height: auto;
+        flex-direction: column; 
+    }
+
+
+    #detailinfo .overlay {
+        height: auto; 
+        position: relative; 
+        flex: 0 0 auto;
+        display: flex;
+    }
+
+    .detailinfo-wrapper {
+        opacity: 1; 
+        width: 100%;
+        right: 0;
+        padding: 0 32px;
+        height: auto;
+        position: relative; 
+        margin-top: 48px;
+    }
+
+    #detailinfo .m-primary {
+        width: 100%; 
+        margin-bottom: 80px;
+    }
+
+    #kontakt {
+        height: auto;
+
+    }
+
+    #kontakt .container {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    #contact-form-wrapper {
+        height: auto;
+        right: 0; 
+        opacity: 1;
+        width: 100%;
+        position: relative;
+        background: url(../3d/ringi-aripark1.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #contact-form-wrapper .contact-opaque-layer {
+        padding: 80px 32px;
+    }
+
+    .kontakt-email-wrapper {
+        flex-direction: column;
+    }
+
+    .kontakt-email-wrapper a, .kontakt-email-wrapper p {
+        width: max-content;
+        display: inline-block;
+    }
+    
+
+}
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+/* ---------------------------------------------------------------- */
+
+@media only screen and (hover: none) {
+    body {
+        overflow-x: hidden;
+
+    }
+
+}
+@media only screen and (max-width: 601px) {
+
+    /* GENERAL */ 
+    h1 {
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .auto-layout {
+        padding: 8px 16px;
+    }
+
+
+    /* INTRO */
+
+    .logo {
+        
+        top: 24px;
+        left: 32px;
+    }
+
+    .container {
+        margin: 8px 8px 8px 8px;
+        width: calc(100% - 16px);
+    }
+
+    .sticky-top, .sticky-bottom {
+        height: 8px;
+        z-index: 1999;
+    }
+
+    .sticky-right, .sticky-left {
+        width: 8px;
+    }
+
+    .upper-cover-gradient {
+        top: 8px; 
+        left: 8px;
+        width: calc(100% - 16px);
+    }
+    
+    .language-container {
+        position: absolute;
+        display: flex;
+        right: 32px;
+        top: 31px;
+    }
+
+    .heading {
+        top: calc(-416px + 90vw - 320px);
+        height: auto;
+        width: 100%;
+        margin: 0;
+        padding: 0 24px;
+    }
+
+    #intro .m-primary {
+        width: calc(100% - 16px);
+        max-width: 100%;
+        left: 8px;
+    
+        top: calc(100vh - 48px);
+        position: fixed !important;
+        position: -webkit-sticky;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        display: inline-flex;
+        z-index: 100;
+    }
+
+    .cookies-alert-container {
+        left: 0;
+        top: 0;
+        width: 100%;
+        justify-content: space-between;
+        position: fixed;
+        opacity: 1;
+        z-index: 999;
+        box-shadow: 0px 34px 80px rgba(36, 30, 27, 0.2);
+    }
+
+    #intro .s-secondary {
+       
+        margin-right: 16px;
+        
+    }
+
+    .cookies-alert-text {
+        
+        margin: 0px 0px 0px 16px;
+    }
+
+    .lower-cover-gradient {
+        height: 454px; 
+        left: 8px;
+        top: calc(100vh - 462px);
+        width: calc(100% - 16px);
+        border-radius: 0;
+        position: absolute;
+    }
+
+    #intro img {
+        border-radius: 0;
+    }
+
+    #eelised {
+        width: calc(100% - 16px);
+        margin: 0 8px 0 8px;
+        height: auto;
+        max-height: none;
+    }
+
+    .container2 {
+        margin: 0 32px;
+        flex-direction: column;
+    }
+
+    .toote-eelised {
+        margin: 80px 24px 0 24px;
+        width: calc(100% - 48px);
+    }
+
+    .asukoha-eelised {
+        margin: 50px 24px 83px 24px;
+        width: calc(100% - 48px);
+
+    }
+
+    #eelised .rectangle9 {
+        max-width: 100%;
+    }
+
+    .asukoht-pildiga-heading-container {
+        top: 92px; 
+        margin: 0 32px 0 32px;
+        width: auto;
+
+    }
+
+    #asukoht-kaardil .flex-wrapper {
+        flex-direction: column; 
+        height: auto;
+        float: none;
+        justify-content: center;
+        align-items: center;
+        background: #C7DEEF;
+
+    }
+
+    #asukoht-kaardil {
+        height: auto;
+    }
+
+    .asukoht-kaardil-img {
+        z-index: 0; 
+        width: calc(100vw - 16px);
+        height: calc(64vw - 16px);
+        background: none;
+        display: block;
+        position: relative;
+        order: 1;
+    
+    }
+
+    #info-box-overlay {
+        order: 2;
+    }
+
+    #asukoht-overlay {
+        order: 4;
+    }
+
+    #google-maps-button {
+        order: 3;
+    }
+
+    .asukoht-kaardil-background {
+        display: none;
+    }
+
+    #asukoht-kaardil .flex-wrapper > * {
+        flex: 1 1 auto;
+    }
+
+    #asukoht-kaardil .overlay {
+        min-height: 324px; 
+        width: 100%; 
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+        align-items: stretch;
+        background-color: #C7DEEF;
+    }
+
+    #info-box-wrapper {
+      
+        right: 0;
+        margin: 0 32px;
+        float: none;
+        position: relative;
+        width: 100%;
+    }
+
+    #info-box-wrapper > * {
+        width: 100%;
+    }
+    .info-box {
+        opacity: 1;
+    }
+
+    #info-box2 {
+        right: 0;
+    }
+
+    #asukoht-kaardil-text-wrapper {
+        opacity: 1;
+        margin: 50px 32px 50px 32px; 
+        right: 0;
+        width: 100%;
+        position: relative;
+        height: auto;
+
+
+    }
+
+    #asukoht-kaardil-text-wrapper > * {
+        margin-left: 0; 
+        width: 100%;
+    }
+
+    #asukoht-kaardil-text-wrapper .rectangle9 {
+        width: 100%; 
+    }
+
+    .asukoht-kaardil-img-mobile {
+        min-height: 100%;
+        min-width: 100%;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+        object-fit: cover;
+        display: block; 
+        z-index: -1;
+        position: relative;
+
+    }
+
+    #asukoht-kaardil .m-primary {
+        margin: 0 32px 0 32px;
+        width: calc(100% - 64px);
+        bottom: 0;
+    }
+
+    #detailinfo {
+        height: auto; 
+        width: 100%; 
+    }
+
+    #detailinfo .background-img {
+        background-position: center left;
+        height: 256px;
+    }
+
+    #detailinfo .container {
+        height: auto;
+        flex-direction: column; 
+    }
+
+
+    #detailinfo .overlay {
+        height: auto; 
+        position: relative; 
+        flex: 0 0 auto;
+        display: flex;
+    }
+
+    .detailinfo-wrapper {
+        opacity: 1; 
+        width: 100%;
+        right: 0;
+        padding: 0 32px;
+        height: auto;
+        position: relative; 
+        margin-top: 48px;
+    }
+
+    #detailinfo .m-primary {
+        width: 100%; 
+        margin-bottom: 80px;
+    }
+
+    #kontakt {
+        height: auto;
+
+    }
+
+    #kontakt .container {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    #contact-form-wrapper {
+        height: auto;
+        right: 0; 
+        opacity: 1;
+        width: 100%;
+        position: relative;
+        background: url(../3d/ringi-aripark1.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #contact-form-wrapper .contact-opaque-layer {
+        padding: 80px 32px;
+    }
+
+    .kontakt-email-wrapper {
+        flex-direction: column;
+    }
+
+    .kontakt-email-wrapper a, .kontakt-email-wrapper p {
+        width: max-content;
+        display: inline-block;
+    }
+
+    .asukoht-kaardil-modal {
+        height: 100vh; 
+        width: 100vw;
+    }
+
+    .modal-img {
+
+    }
+    
+}
+
+@media only screen and (min-width: 450px) {
+    .heading {
+        top: -331px;
+    }
+}
+
+@media (max-height: 480px) and (min-width: 568px) {
+    .heading {
+        top: -220px;
+    }
+}
+
+@media (max-height: 480px) and (min-width: 737px) {
+    .heading {
+        top: -200px;
+    }
+}
+
+
+@media (hover: none) and (min-width: 602px) {
+    #info-box-wrapper {
+        flex-direction: row; 
+    }
+
+    #asukoht-kaardil .overlay {
+        min-height: 164px;
+    }
+
+    #info-box-wrapper > * {
+        width: calc(100% - 16px);
+
+    }
+
+    #info-box1 {
+        margin-right: 16px; 
+    }
+
+    #info-box2 {
+        margin-left: 16px;
+    }
+}
