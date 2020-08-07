@@ -9,7 +9,7 @@
 ** Breakpoint for mobile content: 600px 
 */ 
 
-@media only screen and (max-width: 601px) {
+@media only screen and (max-width: 600px) {
 
     
 
@@ -200,7 +200,7 @@
 
 }
 
-@media only screen and (max-height: 481px) {
+@media only screen and (max-height: 600px) {
     html, body {
         height: 100%;
 
